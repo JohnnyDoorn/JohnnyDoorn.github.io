@@ -1,5 +1,5 @@
 ---
-title: " Basic Skills in Mathematics, Programming \& Statistics"
+title: "Basic Skills in Mathematics, Programming & Statistics"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/RMS

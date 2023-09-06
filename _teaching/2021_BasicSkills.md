@@ -1,5 +1,5 @@
 ---
-title: "Scientific & Statistical Reasoning"
+title: " Basic Skills in Mathematics, Programming \& Statistics"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/RMS
@@ -7,7 +7,7 @@ venue: "UvA, FMG"
 date: 2023-01-01
 ---
 
-Undergraduate course in the Psychology Bachelor's program.
+Undergraduate course in the Psychological Methods specialization of the Psychology Bachelor's program.
 
 %Heading 1
 %======

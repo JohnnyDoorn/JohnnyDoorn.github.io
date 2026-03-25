@@ -12,9 +12,11 @@ redirect_from:
 
 I am an Assistant Professor in the [Psychological Methods](https://psyres.uva.nl/content/research-groups/programme-group-psychological-methods/programme-group-psychological-methods.html) department at the [University of Amsterdam](https://www.uva.nl/en). My research focuses on **Bayesian inference** in psychological science — in particular hypothesis tests for rank-based data and mixed models — with broader interests in open science and software development for [JASP](https://jasp-stats.org/).
 
-## Book
+## Books
 
 Together with Andy Field and Eric-Jan Wagenmakers, I co-authored **Discovering Statistics Using JASP**, a comprehensive introduction to statistics using the free, open-source software JASP. All companion materials — including exercises, data files, and screencasts — are freely available at [discoverjasp.com](https://discoverjasp.com).
+
+I also wrote **A Brief Introduction to Bayesian Inference**, a short online booklet introducing the core ideas behind Bayesian statistics. It is freely available at [johnnydoorn.github.io/IntroductionBayesianInference](https://johnnydoorn.github.io/IntroductionBayesianInference/).
 
 ## Teaching
 

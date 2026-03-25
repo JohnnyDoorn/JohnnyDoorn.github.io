@@ -10,7 +10,7 @@ redirect_from:
 
 # About Me
 
-I am an Assistant Professor in the [Psychological Methods](https://psyres.uva.nl/content/research-groups/programme-group-psychological-methods/programme-group-psychological-methods.html) department at the [University of Amsterdam](https://www.uva.nl/en). My research focuses on **Bayesian inference** and its application to psychological science, with a particular emphasis on developing and evaluating Bayesian hypothesis tests for rank-based data, mixed models, and other common psychological research designs. My broader research interests include nonparametric Bayesian methods, open science practices and reproducibility, and statistical software development for [JASP](https://jasp-stats.org/).
+I am an Assistant Professor in the [Psychological Methods](https://psyres.uva.nl/content/research-groups/programme-group-psychological-methods/programme-group-psychological-methods.html) department at the [University of Amsterdam](https://www.uva.nl/en). My research focuses on **Bayesian inference** in psychological science — in particular hypothesis tests for rank-based data and mixed models — with broader interests in open science and software development for [JASP](https://jasp-stats.org/).
 
 ## Book
 

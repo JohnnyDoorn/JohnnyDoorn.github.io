@@ -1,0 +1,346 @@
+/* ==========================================================================
+   Custom Styles — Johnny van Doorn academic site
+   ========================================================================== */
+
+/* ---------- Colour palette (UvA-inspired deep blue + warm accents) ------- */
+
+$jvd-navy       : #1a2a3a;
+$jvd-blue       : #2563eb;
+$jvd-blue-light : #3b82f6;
+$jvd-blue-pale  : #eff6ff;
+$jvd-teal       : #0d9488;
+$jvd-warm-gray  : #f8fafc;
+$jvd-text       : #1e293b;
+$jvd-muted      : #64748b;
+$jvd-border     : #e2e8f0;
+$jvd-card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+
+/* ---------- Google Font import (Inter — clean modern academic look) ------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* ---------- Global overrides -------------------------------------------- */
+
+body {
+  font-family: 'Inter', -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: $jvd-text;
+  background: $jvd-warm-gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  color: $jvd-navy;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: $jvd-blue;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $jvd-blue-light;
+  }
+}
+
+/* ---------- Masthead / navigation bar ----------------------------------- */
+
+.masthead {
+  background: #fff;
+  border-bottom: 2px solid $jvd-border;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+
+  &__inner-wrap {
+    font-family: 'Inter', sans-serif;
+
+    .site-title {
+      font-weight: 700;
+      color: $jvd-navy;
+      letter-spacing: -0.02em;
+    }
+  }
+}
+
+.greedy-nav {
+  a {
+    color: $jvd-navy !important;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      background: $jvd-blue-pale;
+      color: $jvd-blue !important;
+    }
+  }
+}
+
+/* ---------- Sidebar / author profile ------------------------------------ */
+
+.sidebar {
+  p, li {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.author__avatar {
+  img {
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    border: 3px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.04);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+  }
+}
+
+.author__name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: $jvd-navy;
+}
+
+.author__bio {
+  color: $jvd-muted;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+.author__urls-wrapper {
+  .author__urls {
+    a {
+      color: $jvd-muted;
+      font-size: 0.82em;
+      transition: color 0.15s ease;
+
+      &:hover {
+        color: $jvd-blue;
+      }
+    }
+  }
+}
+
+/* ---------- Page content area ------------------------------------------- */
+
+#main {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: $jvd-card-shadow;
+  padding: 2em 2em 3em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+
+  @media (max-width: 768px) {
+    border-radius: 0;
+    padding: 1.25em;
+  }
+}
+
+.page__content {
+  h2 {
+    color: $jvd-navy;
+    border-bottom: 2px solid $jvd-blue;
+    padding-bottom: 0.4em;
+    margin-top: 2em;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 0.85em;
+      background: $jvd-blue;
+      border-radius: 2px;
+      margin-right: 0.5em;
+      vertical-align: baseline;
+    }
+  }
+
+  h3 {
+    color: mix($jvd-navy, $jvd-blue, 60%);
+  }
+
+  p {
+    line-height: 1.75;
+    color: $jvd-text;
+  }
+
+  ul, ol {
+    line-height: 1.75;
+  }
+
+  /* styled links inside content */
+  a {
+    text-decoration: none;
+    background-image: linear-gradient($jvd-blue-pale, $jvd-blue-pale);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    transition: background-size 0.2s ease;
+
+    &:hover {
+      background-size: 100% 100%;
+      color: $jvd-blue;
+    }
+  }
+}
+
+/* ---------- Archive items (publications, teaching, etc.) ----------------- */
+
+.archive__item {
+  background: #fff;
+  border: 1px solid $jvd-border;
+  border-radius: 8px;
+  padding: 1.25em 1.5em;
+  margin-bottom: 1em;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+  }
+}
+
+.archive__item-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: $jvd-navy;
+  font-size: 1.05em;
+  margin-bottom: 0.3em;
+
+  a {
+    background: none !important;
+    color: $jvd-navy;
+
+    &:hover {
+      color: $jvd-blue;
+    }
+  }
+}
+
+.archive__item-excerpt {
+  color: $jvd-muted;
+  line-height: 1.6;
+  font-size: 0.88em;
+}
+
+/* ---------- Taxonomy tags / pills --------------------------------------- */
+
+.page__taxonomy-item {
+  display: inline-block;
+  background: $jvd-blue-pale;
+  color: $jvd-blue;
+  border: 1px solid mix($jvd-blue-pale, $jvd-blue, 70%);
+  border-radius: 20px;
+  padding: 0.2em 0.75em;
+  font-size: 0.78em;
+  font-weight: 500;
+  margin: 0.15em;
+  transition: background 0.15s ease;
+
+  &:hover {
+    background: mix($jvd-blue-pale, $jvd-blue, 85%);
+  }
+}
+
+/* ---------- Footer ------------------------------------------------------ */
+
+.page__footer {
+  background: $jvd-navy;
+  border-top: none;
+  color: rgba(255,255,255,0.7);
+
+  a {
+    color: rgba(255,255,255,0.85);
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .fas, .fab, .far, .fal {
+    color: rgba(255,255,255,0.6);
+  }
+}
+
+/* ---------- Blockquotes ------------------------------------------------- */
+
+blockquote {
+  border-left: 4px solid $jvd-blue;
+  background: $jvd-blue-pale;
+  padding: 1em 1.25em;
+  border-radius: 0 8px 8px 0;
+  font-family: 'Source Serif 4', Georgia, serif;
+
+  p {
+    color: $jvd-text;
+  }
+}
+
+/* ---------- Code / pre -------------------------------------------------- */
+
+code {
+  background: $jvd-warm-gray;
+  border: 1px solid $jvd-border;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+
+pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 1.25em;
+
+  code {
+    background: none;
+    border: none;
+    color: inherit;
+  }
+}
+
+/* ---------- Buttons ----------------------------------------------------- */
+
+.btn {
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: all 0.2s ease;
+}
+
+/* ---------- Tables ------------------------------------------------------ */
+
+table {
+  border-radius: 8px;
+  overflow: hidden;
+
+  th {
+    background: $jvd-navy;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) {
+    background: $jvd-warm-gray;
+  }
+}
+
+/* ---------- Selection colour -------------------------------------------- */
+
+::selection {
+  background: mix($jvd-blue-pale, $jvd-blue, 60%);
+  color: $jvd-navy;
+}
+
+/* ---------- Smooth scroll ----------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}

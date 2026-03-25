@@ -10,10 +10,10 @@ locale                   : "en-US"
 title                    : "Johnny van Doorn"
 title_separator          : "-"
 name                     : &name "Johnny van Doorn"
-description              : &description "Ass prof @ UvA"
+description              : &description "Assistant Professor of Psychological Methods at the University of Amsterdam"
 url                      : https://johnnydoorn.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "JohnnyDoorn/JohnnyDoorn.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -74,13 +74,13 @@ analytics:
 # Site Author
 author:
   name             : "Johnny van Doorn"
-  avatar           : "profile.png"
-  bio              : ""
-  location         : "Amsterdam"
-  employer         :
+  avatar           : "profile.jpeg"
+  bio              : "Assistant Professor, Psychological Methods"
+  location         : "Amsterdam, The Netherlands"
+  employer         : "University of Amsterdam"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=7TL5ZKsAAAAJ"
-  email            :
+  email            : "J.B.vanDoorn@uva.nl"
   researchgate     : "https://www.researchgate.net/profile/Johnny-Van-Doorn"
   uri              :
   bitbucket        :
@@ -248,7 +248,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Amsterdam # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
